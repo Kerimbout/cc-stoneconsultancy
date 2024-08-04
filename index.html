@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CC-Stone Consultancy</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./images/CC-Stone-Logo .png" alt="Stone Consultancy Logo" />
+      </div>
+      <!-- Inside header -->
+      <div class="menu-toggle">☰</div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      class="hero"
+    >
+      <h1>
+        Delivering Value through Professional and Ethical Consulting Services
+      </h1>
+      <p>Your trusted partner in accounting and business consulting.</p>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+    <section class="about-us" id="about">
+      <div class="content">
+        <h2>About Us</h2>
+        <p>
+          CC-Stone Consultancy is dedicated to delivering exceptional value to our
+          clients by providing top-notch accounting and business consulting
+          services. Our team of seasoned professionals brings a wealth of
+          knowledge and experience to every project, ensuring that we meet and
+          exceed our clients' expectations.
+        </p>
+        <p>
+          We pride ourselves on our professional and ethical approach to
+          business, offering personalized solutions that drive success. Whether
+          you're a small business looking for strategic guidance or a large
+          corporation needing comprehensive accounting services, Stone
+          Consultancy is your trusted partner in achieving your business goals.
+        </p>
+      </div>
+      <div class="image">
+        <img src="./images/about.jpg" alt="About Stone Consultancy" />
+      </div>
+    </section>
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <h3>Accounting Services</h3>
+          <p>
+            We offer comprehensive accounting services tailored to your business
+            needs, ensuring accurate financial records and compliance.
+          </p>
+          <a href="#contact" class="cta-button">Learn More</a>
+        </div>
+        <div class="service-card">
+          <h3>Business Consulting</h3>
+          <p>
+            Our expert consultants provide strategic advice to help your
+            business grow, improve operations, and achieve long-term success.
+          </p>
+          <a href="#contact" class="cta-button">Learn More</a>
+        </div>
+        <div class="service-card">
+          <h3>Financial Planning</h3>
+          <p>
+            We offer personalized financial planning services to help you manage
+            your finances, plan for the future, and achieve your financial
+            goals.
+          </p>
+          <a href="#contact" class="cta-button">Learn More</a>
+        </div>
+        <!-- <div class="service-card">
+          <img src="path/to/accounting-icon.png" alt="Accounting Services" style="width: 50px; margin-bottom: 10px;">
+          <h3>Accounting Services</h3>
+          <p>We offer comprehensive accounting services tailored to your business needs, ensuring accurate financial records and compliance.</p>
+          <a href="#contact" class="cta-button">Learn More</a>
+      </div> -->
+      </div>
+    </section>
+    <section class="why-choose-us" id="why-choose-us">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>
+          <img src="path/to/expertise-icon.png" alt="Expertise Icon" />Expertise
+          in accounting and business consulting
+        </li>
+        <li>
+          <img src="path/to/trust-icon.png" alt="Trust Icon" />Committed to
+          ethical practices and professionalism
+        </li>
+        <li>
+          <img
+            src="path/to/personalized-icon.png"
+            alt="Personalized Icon"
+          />Personalized solutions tailored to your needs
+        </li>
+        <li>
+          <img src="path/to/results-icon.png" alt="Results Icon" />Proven track
+          record of delivering results
+        </li>
+        <li>
+          <img src="path/to/support-icon.png" alt="Support Icon" />Exceptional
+          client support and satisfaction
+        </li>
+      </ul>
+    </section>
+    <section class="testimonials" id="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p>
+            "CC-Stone Consultancy has been instrumental in helping our business
+            streamline our financial processes. Their expertise and professional
+            approach have been invaluable."
+          </p>
+          <div class="client-name">John Doe</div>
+          <div class="client-position">CEO, ABC Corp</div>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "The team at CC-Stone Consultancy provided excellent business
+            consulting services that significantly improved our operational
+            efficiency. Highly recommended!"
+          </p>
+          <div class="client-name">Jane Smith</div>
+          <div class="client-position">CFO, XYZ Ltd</div>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "Working with CC-Stone Consultancy has been a game-changer for our
+            financial planning. Their personalized approach and attention to
+            detail are unmatched."
+          </p>
+          <div class="client-name">Michael Brown</div>
+          <div class="client-position">Managing Director, LMN Inc</div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: info@stoneconsultancy.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Stone Street, City, Country</p>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
