@@ -1,0 +1,429 @@
+body {
+  font-family: 'Gill Sans MT', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #4B0082;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap; /* Add this to allow wrapping */
+  padding: 25px;
+  margin: 0;
+}
+
+.header nav ul li {
+  margin-left: 20px;
+  font-size: 1.2em; /* Adjust font size if needed */
+}
+
+@media (max-width: 768px) {
+  .header nav ul li {
+    margin-left: 10px;
+  }
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .header nav ul {
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: flex-start;
+    background-color: #4B0082;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none; /* Initially hide menu */
+  }
+
+  .header nav ul.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .header nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Responsive Button */
+.header .menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 1.5em;
+  }
+}
+
+/* Adjust Services Padding */
+.services {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.service-card {
+  margin: 20px auto; /* Center cards */
+}
+
+
+.header img {
+  height: 40px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #DAA520;
+}
+
+.content {
+  padding-top: 70px;
+}
+
+.hero {
+  background: url('../images/img112.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 90%;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.cta-button {
+  background-color: #DAA520;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #4B0082;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+
+.about-us .content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-us .content h2 {
+  font-size: 2.5em;
+  color: #4B0082;
+  margin-bottom: 20px;
+}
+
+.about-us .content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.about-us .image {
+  flex: 1;
+}
+
+.about-us .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.services {
+  padding: 50px;
+  background-color: #4B0082;
+  color: white;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: white;
+  color: #4B0082;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.why-choose-us {
+  background-color: #f8f8f8;
+  padding: 50px;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #4B0082;
+}
+
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose-us li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.why-choose-us img {
+  margin-right: 10px;
+}
+
+.testimonials {
+  background-color: #4B0082;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: white;
+  color: #4B0082;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.client-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.client-position {
+  font-style: italic;
+}
+
+.contact {
+  padding: 50px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #4B0082;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background-color: #4B0082;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #DAA520;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+
+  .about-us {
+    flex-direction: column;
+  }
+
+  .services .service-cards,
+  .testimonials .testimonial-cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 0.8em;
+  }
+
+  .about-us .content h2,
+  .services h2,
+  .why-choose-us h2,
+  .testimonials h2,
+  .contact h2 {
+    font-size: 2em;
+  }
+
+  .about-us .content p,
+  .service-card p,
+  .testimonial-card p,
+  .contact-info p {
+    font-size: 0.9em;
+  }
+}
