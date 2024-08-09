@@ -401,6 +401,79 @@ body {
   line-height: 1.6;
 }
 
+/* Cookie Consent Popup */
+.cookie-consent {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: white;
+  color: #4B0082;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0.95;
+  width: 500px;  
+}
+
+.cookie-consent h3 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #4B0082;
+  text-align: center;
+}
+
+.cookie-consent p {
+  margin: 0;
+  flex-grow: 1;
+  margin-bottom: 20px; 
+  
+  font-size: 14px;
+}
+
+.cookie-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adds space between the buttons */
+}
+
+.accept-button,
+.deny-button { 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accept-button {
+  background-color: #4B0082;
+  color: white;
+}
+.accept-button:hover {
+  background-color: #DAA520;
+}
+
+.deny-button {
+  background-color: #d3d3d3;
+  color: white;
+}
+.deny-button:hover {
+  background-color: #d3d3d3;
+}
+
+.cookie-consent .cookie-link{
+  margin-top: 10px;
+  color: #DAA520;
+  display: block;
+  text-align: center;
+
+}
+
 @media (max-width: 768px) {
   .header nav {
     flex-direction: column;
